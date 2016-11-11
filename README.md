@@ -59,6 +59,10 @@ Boolean setting specifying if a single command should be listed in the command p
 
 True if, when moving up a directory, you would like the previous selection to be automatically chosen. False otherwise.
 
+# Open this readme quickly
+
+There is a little package that will do this really quickly for you, and, he's got a really cute name: [Readme​Please](https://packagecontrol.io/packages/ReadmePlease).
+
 # License
 
 The MIT License (MIT)
