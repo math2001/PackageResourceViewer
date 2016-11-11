@@ -15,5 +15,9 @@
 
     // True if, when moving up a directory, you would like the previous
     // selection to be automatically chosen. False otherwise.
-    "return_to_previous": false
+    "return_to_previous": false,
+
+    // If set to true, it will open the containing folder after you
+    // extracted it.
+    "open_containing_folder_after_extracting": false 
 }
