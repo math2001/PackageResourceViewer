@@ -231,6 +231,10 @@ class ExtractPackageCommand(sublime_plugin.WindowCommand):
         if index == -1:
             return
         extract_package(self.packages[index])
+        if self.settings.get('open_containing_folder_after_extracting', False) is True:
+            path = os.path.join(sublime.packages_path(), self.packages[index])
+            self.window.run_command('open_dir', { 'dir': path })
+            print('opened_dir {} - {}'.format(path, os.path.isdir(path)))
 
     def show_quick_panel(self, options, done_callback):
         sublime.set_timeout(lambda: self.window.show_quick_panel(options, done_callback), 10)
